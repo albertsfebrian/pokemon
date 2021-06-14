@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "target": "esnext",
+      "jsx": "react",
+      "allowSyntheticDefaultImports": true,
+      "checkJs": false,
+      "paths": {
+        "@components/*" : ["src/components/*"],
+        "@pages/*" : ["src/pages/*"],
+        "@utils/*" : ["src/utils/*"],
+        "@variables/*" : ["src/variables/*"],
+        "@graphql/*" : ["src/graphql/*"],
+        "@queries/*" : ["src/graphql/queries/*"],
+        "@assets/*" : ["src/assets/*"],
+        "@styles/*" : ["src/styles/*"],
+        "@handler/*" : ["src/handler/*"]
+      }
+    },
+    "include": ["src/*"],
+    "exclude": ["node_modules","dist","references"]
+  }

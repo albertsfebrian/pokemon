@@ -1,0 +1,21 @@
+export const tagColor = {
+    bug: "#abbb1f",
+    dark: "#523d2e",
+    dragon: "#735cdb",
+    electric: "#fcba16",
+    fairy: "#f6b5f6",
+    fighting: "#85361d",
+    fire: "#ef420e",
+    flying:"#9aabf6",
+    ghost:"#5f5fb1",
+    grass: "#73c235",
+    ground: "#d4b458",
+    ice: "#a8e9fe",
+    normal: "#c7c2b9",
+    poison: "#944695",
+    psychic: "#ed4882",
+    rock: "#bea65c",
+    steel: "#babac8",
+    water: "#3698fb",
+    default: "#ffffff"
+}

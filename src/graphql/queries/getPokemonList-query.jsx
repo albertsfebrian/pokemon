@@ -1,0 +1,19 @@
+import { gql } from '@apollo/client';
+
+export const GET_POKEMONS = gql`
+    query pokemons($limit: Int, $offset: Int) {
+        pokemons(limit: $limit, offset: $offset) {
+            results {
+                id
+                url
+                name
+                image
+            }
+        }
+    }
+`;
+
+export const GET_POKEMONS_VAR = {
+    limit: 60,
+    offset: 0
+};
