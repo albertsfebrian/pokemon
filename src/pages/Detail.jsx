@@ -72,7 +72,6 @@ const Detail = () => {
             <div css={detail}>
                 <div className="head" style={{ backgroundColor: `${ getCardColor(types) }` }}>
                     <div className="container">
-                        {/* <Link to="/"><button>&#8592; Back</button></Link> */}
                         <button onClick={()=> history.goBack()}>&#8592; Back</button>
                         <PokemonHeading name={name} pokemonData={data} loading={loading}/>
                     </div>

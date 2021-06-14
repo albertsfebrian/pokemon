@@ -25,8 +25,6 @@ const Home = () => {
     }, [])
     
     useEffect(() => {
-        // setIsLoading(true);
-        // console.log(`useEffect Kepanggil jadi ${loading}`)
         setIsLoading(loading);
         if(isFirstLoad && !loading) setIsFirstLoad(false);
     }, [loading])
@@ -42,39 +40,10 @@ const Home = () => {
 
     const [counter, setCounter] = useState(0);
 
-    // const handleObserver =async(entries)=>{
-    //     const target = entries[0];
-    //     console.log(entries);
-    //     console.log(`${target.isIntersecting} ${isLoading} ${counter}`);
-    //     if(target.isIntersecting && !isLoading && counter==0){
-    //         console.log("masuk")
-    //         setOffset(offset + GET_POKEMONS_VAR.limit)
-    //         GET_POKEMONS_VAR.offset = offset + GET_POKEMONS_VAR.limit;
-    //         setIsLoading(true);
-    //         setCounter(1);
-    //         console.log(offset + GET_POKEMONS_VAR.limit);
-    //         await refetch(GET_POKEMONS_VAR);
-    //         setIsLoading(false);
-    //         console.log(`Done fetch ${offset + GET_POKEMONS_VAR.limit}`)
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     if(isLoading) return;
-    //     const option = {
-    //         root: null,
-    //         rootMargin: "200px",
-    //         threshold: 1.0
-    //     }
-    //     const observer = new IntersectionObserver(handleObserver);
-    //     if(loaderRef.current) observer.observe(loaderRef.current);
-    // }, [offset, isLoading, counter])
-
     const handleScroll =async()=>{
         const scrollPos = window.innerHeight + window.scrollY;
         const scrollTreshold = document.body.offsetHeight - 200;
         if(scrollPos >= scrollTreshold){
-            // console.log(`isload ${isLoading}`);
             if(!isLoading){
                 const newVar = {...GET_POKEMONS_VAR, offset: offset + GET_POKEMONS_VAR.limit}
                 setIsLoading(true);

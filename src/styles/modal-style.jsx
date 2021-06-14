@@ -54,14 +54,11 @@ export const modal = css`
         .close{
             text-align: right;
             button{
-                ${'' /* cursor: pointer; */}
                 background-color: transparent;
-                ${'' /* border: none; */}
                 font-size: 2rem;
                 font-weight: 800;
                 color: ${navFontColor};
                 letter-spacing: 2px;
-                ${'' /* transition: 100ms all ease-in-out; */}
                 padding: 0;
 
                 &:hover{
@@ -104,7 +101,6 @@ export const success = css`
                 }
             }
             span{
-                ${'' /* margin:0.125rem; */}
                 padding: 0.5rem;
                 display: block;
                 color: red;
@@ -112,19 +108,13 @@ export const success = css`
             }
         }
         button{
-            ${'' /* cursor: pointer; */}
             padding: 0.75rem 5rem;
             border-radius: 1000px;
-            ${'' /* border: none; */}
-            ${'' /* font-size: 1rem; */}
-            ${'' /* font-weight: 700; */}
             text-align: center;
-            ${'' /* letter-spacing: 1px; */}
             margin: 0;
             color: white;
             display: inline-block;
             background-color: ${btnPrimaryColor};
-            ${'' /* transition: 100ms all ease-in-out; */}
             &:hover{
                 background-color: ${btnPrimaryColorHover};
             }

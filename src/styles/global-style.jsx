@@ -5,8 +5,7 @@ import { min_sm_container ,min_md_container,min_lg_container,min_xl_container, m
 
 export const global = css`
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-    ${'' /* @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap'); */}
-
+   
     *{
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
