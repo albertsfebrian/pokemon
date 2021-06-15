@@ -7,7 +7,7 @@ const Navbar = ({routing}) => {
         <>
             <header css={navbar}>
                 <div className="container" id="header-container">
-                    <Link to="/">
+                    <Link to="/" className="main-logo">
                         <img src={PokemonLogo} alt="Pokemon Logo" height="50" width="136"/>
                     </Link>
                     <div id="nav-container">

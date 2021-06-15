@@ -18,7 +18,7 @@ export const navbar = css`
         padding: 0;
     }
 
-    img{
+    .main-logo{
         display: none;
     }
 
@@ -56,7 +56,7 @@ export const navbar = css`
         border-bottom: 2px solid ${navBorderColor};
         padding: 1rem;
 
-        img{
+        .main-logo{
             display: inline;
         }
         #nav-container{
