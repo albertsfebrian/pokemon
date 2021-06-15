@@ -8,7 +8,7 @@ const Navbar = ({routing}) => {
             <header css={navbar}>
                 <div className="container" id="header-container">
                     <Link to="/">
-                        <img src={PokemonLogo} alt="Pokémon" height="50rem" width="auto"/>
+                        <img src={PokemonLogo} alt="Pokemon Logo" height="50" width="136"/>
                     </Link>
                     <div id="nav-container">
                         {
@@ -16,7 +16,7 @@ const Navbar = ({routing}) => {
                                 if(route.isNavShown){
                                     return(
                                         <Link to={route.path} key={route.key}>
-                                            <img src={route.image} alt="img-nav" height="auto" width="50"/>
+                                            <img src={route.image} alt="img-nav" height="30" width="50"/>
                                             <span>{route.key}</span>
                                         </Link>
                                     );

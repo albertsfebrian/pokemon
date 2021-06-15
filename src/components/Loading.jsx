@@ -15,7 +15,7 @@ const Loading = () => {
                 {imageError ? 
                     <h1>Loading . . .</h1>
                 :
-                    <img src={pokeball} alt="Loading..." height={"100"} width={"auto"} onError={(e)=>handleError(e)}/>
+                    <img src={pokeball} alt="Loading..." height={"100"} width={"100"} onError={(e)=>handleError(e)}/>
                 }
             </div>
         </>

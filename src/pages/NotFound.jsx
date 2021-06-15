@@ -14,8 +14,8 @@ const NotFound = () => {
             <ErrorMessage 
                 image={notFoundImg} 
                 alt={"Picture"}
-                height={"auto"}
-                width={"225"}
+                height={"240px"}
+                width={"227px"}
                 redirect={"/"} 
                 h1Msg={"Sorry..."} 
                 h2Msg={"The Page You're Searching is Not Found"}

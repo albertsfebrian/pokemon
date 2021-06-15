@@ -63,7 +63,7 @@ const SuccessModal = ({isShowing, setIsShowing, name, id}) => {
             <Modal isShowing={isShowing} onClose={()=>onClose()}>
                 <div css={success}>
                     <h1>Congratulations</h1>
-                    <img src={successImg} alt={"Picture"} height={"auto"} width={"175"}/>
+                    <img src={successImg} alt={"Picture"} height={"237"} width={"175"}/>
                     <h2 className="capitalize">{`You Caught ${name}`}</h2>
                     <form onSubmit={(e)=>onSubmit(e)}>
                         <div>

@@ -19,5 +19,3 @@ export const cardColor = {
     water: "#6886c5",
     default: "#a4a4a4"
 }
-
-// default: "#ff7171"

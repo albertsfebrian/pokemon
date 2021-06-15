@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     entry : path.join(__dirname,'src/index.jsx'),
@@ -61,12 +62,19 @@ module.exports = {
         new HtmlWebpackPlugin({
             template : path.join(__dirname, 'public/index.html')
         }),
+        new WorkboxPlugin.GenerateSW({
+            // these options encourage the ServiceWorkers to get in there fast
+            // and not allow any straggling "old" SWs to hang around
+            clientsClaim: true,
+            skipWaiting: true
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: "public/favicon.png", to: "favicon.png" },
+                { from: "public/logo192.png", to: "logo192.png" },
+                { from: "public/logo512.png", to: "logo512.png" },
                 { from: "public/manifest.json", to: "manifest.json" },
                 { from: "public/robots.txt", to: "robots.txt" },
-                // { context:'src/assets' ,from: "*", to: "static/media"}
             ],
         }),
     ]

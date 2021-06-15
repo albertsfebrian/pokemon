@@ -84,8 +84,8 @@ const Home = () => {
             <ErrorMessage 
                 image={errorImg} 
                 alt={"Picture"}
-                height={"auto"}
-                width={"225"}
+                height={"257px"}
+                width={"219px"}
                 redirect={"/"} 
                 h1Msg={"Error"} 
                 h2Msg={error.message}
@@ -104,7 +104,7 @@ const Home = () => {
                 </div>
                 {isLoading ? 
                     <div className="loading">
-                        <img src={pokeballIcon} alt="Loading..." height={"50"} width={"auto"}/>
+                        <img src={pokeballIcon} alt="Loading..." height={"50"} width={"50"}/>
                     </div>
                     :
                     null

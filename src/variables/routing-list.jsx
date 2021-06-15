@@ -1,8 +1,5 @@
-// import Home from "@pages/Home";
-// import Detail from "@pages/Detail";
-// import MyPokemon from "@pages/MyPokemon";
-import Pokedex from '@assets/pokedex.png';
-import Storage from '@assets/storage.png';
+import Pokedex from '@assets/pokedex-nav.png';
+import Storage from '@assets/storage-nav.png';
 import { lazy } from 'react';
 
 const Home = lazy( ()=> import("@pages/Home"));

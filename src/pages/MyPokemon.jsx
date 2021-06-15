@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getAllPokemon , getAllPokemonSortedId, removePokemon } from "@handler/pokemon-handler";
+import { getAllPokemonSortedId, removePokemon } from "@handler/pokemon-handler";
 import PokeOwnedCard from "@components/Card/PokeOwnedCard";
 import { mypokemon } from '@styles/mypokemon-style';
 import catchImg from "@assets/catch.png";
@@ -56,8 +56,8 @@ const MyPokemon = () => {
             <ErrorMessage 
                 image={catchImg} 
                 alt={"Picture"}
-                height={"auto"}
-                width={"175"}
+                height={"237px"}
+                width={"175px"}
                 redirect={"/"} 
                 h1Msg={"No Pokemon Found..."} 
                 h2Msg={"Gotta Catch 'em all!"}

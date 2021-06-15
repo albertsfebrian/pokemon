@@ -72,6 +72,7 @@ export const modal = css`
 
             @media (max-width: ${max_xs_device}){
                 width: 10rem;
+                height: auto;
             }
         }
     }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useFetch from "@utils/useFetch";
 import { card } from "@styles/card-style";
 import toSlug from "@utils/toSlug";
-import pokeBg from "@assets/pokeball.png";
+import Pokeball from "@assets/pokeball.png";
 import Tags from "@components/Tags";
 import getCardColor from "@utils/getCardColor"
 import generatePadId from "@utils/generatePadId";
@@ -31,8 +31,8 @@ const CardBase = ({pokeItem, height, children}) => {
     return (  
         <Link to={"/pokemon/"+toSlug(pokeItem.name)}>
             <div css={card} style={{ backgroundColor: `${ getCardColor(types) }`, height:`${height}` }}>
-                <img className="img-bg" src={pokeBg} alt="pokeball" height="130px" width="130px"/>
-                <img src={pokeItem.image} alt={pokeItem.name} height="96px" width="96px"/>
+                <img className="img-bg" src={Pokeball} alt="pokeball" height="130" width="130"/>
+                <img src={pokeItem.image} alt={pokeItem.name} height="96" width="96"/>
                 <div>
                     <h1 className="capitalize">{pokeItem.name}</h1>
                     <Tags pokeTypes={types}/>

@@ -5,7 +5,7 @@ import { detail } from "@styles/detail-style";
 import getCardColor from "@utils/getCardColor";
 import NotFound from "@pages/NotFound";
 import PokemonHeading from "@components/PokemonHeading";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import MoveList from "@components/MoveList";
 import errorImg from "@assets/sad-poke.png";
 import ErrorMessage from "@components/ErrorMessage";
@@ -57,8 +57,8 @@ const Detail = () => {
             <ErrorMessage 
                 image={errorImg} 
                 alt={"Picture"}
-                height={"auto"}
-                width={"225"}
+                height={"257px"}
+                width={"219px"}
                 redirect={"/"} 
                 h1Msg={"Error"} 
                 h2Msg={error.message}

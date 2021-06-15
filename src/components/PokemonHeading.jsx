@@ -13,7 +13,7 @@ const PokemonHeading = ({name, pokemonData,loading}) => {
         return(
             <>
                 <div css={heading}>
-                    <img src={Pokeball} alt="Pokeball" width="20px" height="auto"/>
+                    <img src={Pokeball} alt="Pokeball" width="20" height="20"/>
                     <div className="info">
                         <Skeleton margin={"10px 0 10px 0"} width={"5rem"} height={"23px"} baseColor={"transparent"}/>
                         <Skeleton margin={"10px 0 10px 0"} width={"15rem"} height={"38px"} baseColor={"transparent"}/>
@@ -31,7 +31,7 @@ const PokemonHeading = ({name, pokemonData,loading}) => {
     return (  
         <>
             <div css={heading}>
-                <img src={Pokeball} alt="Pokeball" width="20px" height="auto"/>
+                <img src={Pokeball} alt="Pokeball" width="20" height="20"/>
                 <div className="info">
                     <h3>{pokemonData && generatePadId(pokemonData.pokemon.id)}</h3>
                     <h1 className="capitalize">{pokemonData && pokemonData.pokemon.name}</h1>
