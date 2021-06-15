@@ -33,7 +33,7 @@ const SuccessModal = ({isShowing, setIsShowing, name, id}) => {
             return false;
         }
         else if(name.length < 3 || name.length > 20){
-            setErrorPokeName("Name must between 5-20 character");
+            setErrorPokeName("Name must between 3-20 character");
             return false;
         }
         else if(isPokeNameExist(name)){
