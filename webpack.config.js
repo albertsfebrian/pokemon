@@ -53,8 +53,8 @@ module.exports = {
         }
     },
     devServer : {
-        host : '192.168.10.55',
-        port : 3000,
+        // host : '192.168.100.100',
+        // port : 3000,
         contentBase: path.join(__dirname, 'public'),
         historyApiFallback: true,
     },

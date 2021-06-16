@@ -4,7 +4,6 @@
   "description": "\"Pokémon Web Platform\"",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
     "start": "webpack serve --mode development",
     "build": "webpack build --mode production",
     "test": "jest"
