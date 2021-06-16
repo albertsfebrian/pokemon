@@ -2,6 +2,10 @@
 
 # Pokémon App
 ### Hosted : https://my-pokemon-application.netlify.app/
+References:
+1. UI Design (https://dribbble.com/shots/14241781-Pok-dex)
+2. UI Design (https://dribbble.com/shots/6545819-Pokedex-App)
+3. Tags (https://brickbronze.fandom.com/wiki/Appendix:Pok%C3%A9mon_Types)
 
 ## Stacks:
 1. [React v17.0.2](https://reactjs.org/docs/getting-started.html)
