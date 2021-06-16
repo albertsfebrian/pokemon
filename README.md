@@ -22,8 +22,10 @@ Open [http://localhost:8080/](http://localhost:8080/) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-If you want to run in your local network or config the port number, go to `webpack.config.js` and replace the host with your computer IP and the desired port number. 
+If you want to run in your local network or config the port number, go to `webpack.config.js` and replace the host with your computer IP and the desired port number.
+
 ![image](https://user-images.githubusercontent.com/52168132/122200276-13bd8a00-cec5-11eb-9bbd-fdf759a8d0ae.png)
+
 Now you can open http://192.168.100.100:3000/ **(http://[your-computer-ip]:[port-number]/)** with other devices that connect to local network.
 
 ### `npm test`
@@ -38,3 +40,36 @@ Builds the app for production to the `dist` folder.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Lighthouse Test 
+![images](https://raw.githubusercontent.com/albertsfebrian/pokemon/main/demo/Lighthouse.jpg)
+Notes : This website was tested using Chrome without any Extension installed, Because Chrome extensions may be negatively affected page's load performance.
+
+## Preview
+### `Mobile-First (Responsive Web Application)`
+#### Mobile
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/responsive-mobile.jpg?raw=true)
+#### Tablet
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/responsive-tablet.jpg?raw=true)
+#### Desktop
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/responsive-computer.jpg?raw=true)
+
+### `Skeleton Loader`
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/Skeleton-1.jpg?raw=true)
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/Skeleton-2.jpg?raw=true)
+
+### `Tag Failed to Fetch`
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/tag_failed.jpg?raw=true)
+
+### `Handling Image on Error Fetch`
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/ImgOnError_1.jpg?raw=true)
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/ImgOnError_2.jpg?raw=true)
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/ImgOnError_3.jpg?raw=true)
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/ImgOnError_4.jpg?raw=true)
+
+### `Modal`
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/Modal_1.jpg?raw=true)
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/Modal_2.jpg?raw=true)
+
+### `Page Not Found`
+![images](https://github.com/albertsfebrian/pokemon/blob/main/demo/Not_Found.jpg?raw=true)
