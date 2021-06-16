@@ -4,7 +4,7 @@ import PokeOwnedCard from "@components/Card/PokeOwnedCard";
 import { mypokemon } from '@styles/mypokemon-style';
 import catchImg from "@assets/catch.png";
 import Skeleton from '@components/Skeleton';
-import { scrollToOptions, storage_card_height } from '@variables/others';
+import { scrollToOptions, storage_card_height, title_app } from '@variables/others';
 import ErrorMessage from "@components/ErrorMessage";
 import ConfirmationModal from "@components/Modal/ConfirmationModal";
 
@@ -19,7 +19,8 @@ const MyPokemon = () => {
     }, [])
 
     useEffect(() => {
-        window.scrollTo(scrollToOptions)
+        window.scrollTo(scrollToOptions);
+        document.title = `${title_app} | My Pokémon`;
     }, [])
 
     const fetchPokemon = () => {

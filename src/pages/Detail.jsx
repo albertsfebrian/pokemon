@@ -14,7 +14,7 @@ import SuccessModal from "@components/Modal/SuccessModal";
 import FailedModal from "@components/Modal/FailedModal";
 import { useEffect, useState } from "react";
 import randomCatch from "@utils/randomCatch";
-import { scrollToOptions } from "@variables/others";
+import { scrollToOptions, title_app } from "@variables/others";
 
 const Detail = () => {
     const history = useHistory();
@@ -31,7 +31,8 @@ const Detail = () => {
     const [isFailedShow, setIsFailedShow] = useState(false);
     
     useEffect(() => {
-        window.scrollTo(scrollToOptions)
+        window.scrollTo(scrollToOptions);
+        document.title = `${title_app} | ${name}`;
     }, [])
 
     const handleCatch = () => {

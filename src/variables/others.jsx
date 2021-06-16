@@ -5,3 +5,4 @@ export const scrollToOptions = {
     left: 0,
     behavior: 'smooth'
 }
+export const title_app = "Pokémon App";

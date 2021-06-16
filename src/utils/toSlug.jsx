@@ -1,6 +1,7 @@
 const toSlug = (name) => {
     if(!name) return "";
-    return name.replaceAll(" ","-").toLowerCase();;
+    const regex = /\s/g;
+    return name.replace(regex,'-').toLowerCase();
 }
  
 export default toSlug;

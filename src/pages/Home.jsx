@@ -4,7 +4,7 @@ import {GET_POKEMONS, GET_POKEMONS_VAR} from '@queries/getPokemonList-query'
 import PokedexCard from '@components/Card/PokedexCard';
 import { home } from '@styles/home-style';
 import Skeleton from '@components/Skeleton';
-import { pokedex_card_height, scrollToOptions } from '@variables/others';
+import { pokedex_card_height, scrollToOptions, title_app } from '@variables/others';
 import ErrorMessage from "@components/ErrorMessage";
 import errorImg from "@assets/sad-poke.png";
 import pokeballIcon from "@assets/pokeball-icon.png"
@@ -21,7 +21,8 @@ const Home = () => {
     const { loading, error, data, refetch } = useQuery(GET_POKEMONS, {variables: GET_POKEMONS_VAR})
 
     useEffect(() => {
-        window.scrollTo(scrollToOptions)
+        window.scrollTo(scrollToOptions);
+        document.title = `${title_app} | Pokédex`;
     }, [])
     
     useEffect(() => {

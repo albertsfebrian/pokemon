@@ -6,7 +6,21 @@
   "scripts": {
     "webpack": "webpack",
     "start": "webpack serve --mode development",
-    "build": "webpack build --mode production"
+    "build": "webpack build --mode production",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@components(.*)$": "<rootDir>/src/components$1",
+      "^@pages(.*)$": "<rootDir>/src/pages$1",
+      "^@utils(.*)$": "<rootDir>/src/utils$1",
+      "^@variables(.*)$": "<rootDir>/src/variables$1",
+      "^@graphql(.*)$": "<rootDir>/src/graphql$1",
+      "^@queries(.*)$": "<rootDir>/src/graphql/queries$1",
+      "^@assets(.*)$": "<rootDir>/src/assets$1",
+      "^@styles(.*)$": "<rootDir>/src/styles$1",
+      "^@handler(.*)$": "<rootDir>/src/handler$1"
+    }
   },
   "keywords": [],
   "author": "",
@@ -22,13 +36,19 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "babel-jest": "^27.0.2",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.0",
     "css-loader": "^5.2.6",
+    "fetch-mock": "^9.11.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
     "mini-css-extract-plugin": "^1.6.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
